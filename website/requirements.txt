@@ -2,7 +2,8 @@ django
 gunicorn
 psycopg2
 djangorestframework
-django-filter 
+django-filter
+django-mathfilters
 django-allauth
 django-crispy-forms
 django-environ
