@@ -1,7 +1,7 @@
 version: "3"
 
 services:
-  silimasoftware: &silimasoftware
+  silimasoftware:
     build: .
     image: localhost:5000/silimasoftware:latest
     env_file:
@@ -13,12 +13,6 @@ services:
     volumes:
       - website_data:/usr/src/app
 
-  silimasoftware_worker:
-    <<: *silimasoftware
-    container_name: silimasoftware_worker
-    command: celery -A config.celery worker -l INFO
-    depends_on:
-      - silimasoftware
 
   silimasoftware_nginx:
     build: ./nginx
@@ -32,6 +26,7 @@ services:
       - "traefik.http.services.silimasoftware_nginx.loadbalancer.server.port=80"
     volumes:
       - website_data:/usr/src/app
+      - ./nginx:/etc/nginx/conf.d/
     depends_on:
       - silimasoftware
 
