@@ -1,0 +1,56 @@
+version: "3"
+
+services:
+  silimasoftware: &silimasoftware
+    build: .
+    image: localhost:5000/silimasoftware:latest
+    env_file:
+      - .env
+    restart: always
+    command: bash -c "python manage.py makemigrations && python manage.py migrate &&
+      gunicorn config.wsgi:application  -b 0.0.0.0:80"
+    container_name: silimasoftware
+    volumes:
+      - website_data:/usr/src/app
+
+  silimasoftware_worker:
+    <<: *silimasoftware
+    container_name: silimasoftware_worker
+    command: celery -A config.celery worker -l INFO
+    depends_on:
+      - silimasoftware
+
+  silimasoftware_nginx:
+    build: ./nginx
+    restart: always
+    container_name: silimasoftware_nginx
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.silimasoftware_nginx.entrypoints=websecure"
+      - "traefik.http.routers.silimasoftware_nginx.tls.certresolver=sslresolver"
+      - "traefik.http.routers.silimasoftware_nginx.rule=Host(`alpha.silimasoftware.co.za`)"
+      - "traefik.http.services.silimasoftware_nginx.loadbalancer.server.port=80"
+    volumes:
+      - website_data:/usr/src/app
+    depends_on:
+      - silimasoftware
+
+  db-silimasoftware:
+    image: postgres
+    restart: always
+    container_name: db-silimasoftware 
+    env_file:
+      - .env
+    volumes:
+      - silimasoftware_data:/var/lib/postgresql/data
+
+volumes:
+  silimasoftware_data:
+    external: true
+  website_data:
+    external: true
+
+networks:
+  default:
+    external:
+      name: hostnet

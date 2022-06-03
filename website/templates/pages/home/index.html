@@ -1,0 +1,342 @@
+<div class="bg-imgb1" style="padding-top: 80px; padding-bottom:90px; ">
+  <div class="text-center text-dark">
+    <h1 class="headings-mono">SilimaSoftware</h1>
+  </div>
+  <div class="text-center p-4 d-flex ">
+    <div class="col-lg-12 col-md-12 p-4">
+
+      <br>
+      <h4 class="p-2 text-dark headings-mono">
+        Software Development & Consulting<br>
+      </h4>
+      <br>
+      <p class="text-dark headings-mono">
+        Websites, Web-Apps, Desktop & Mobile<br>
+        We build secure, scalable solutions for startups, small and medium businesses. <br>
+      </p>
+      <button style="position: relative; z-index: 1;" type="button" class="shadow btn btn-outline-dark"
+        data-bs-toggle="modal" data-bs-target="#web_modal"> Web
+      </button> |
+      <button style="position: relative; z-index: 1;" type="button" class="shadow btn btn-outline-dark"
+        data-bs-toggle="modal" data-bs-target="#cloud_modal">
+        Cloud
+      </button> |
+      <button style="position: relative; z-index: 1;" type="button" class="shadow btn btn-outline-dark"
+        data-bs-toggle="modal" data-bs-target="#software_modal">
+        Software
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="bg-d2" style="padding-top: 80px; padding-bottom:90px; ">
+  <div id="productsScroll"></div>
+  <h2 class="headings-mono text-center text-light">Featured Products</h2>
+  <br>
+  <div class="rounded p-3">
+    <div class="fb-container text-dark">
+      <div class="fb-item" style="position: relative; z-index: 1;">
+        <div class="rounded bg-light shadow p-2">
+          <div class="card-body">
+            <h2 class="card-title text-center mb-3 headings-mono">Cloud Hosting Platform-as-a-Service</h2>
+            <div id="CloudView" style="display: none;"
+              class="card-text text-center headings-mono border rounded shadow bg-light p-3">
+              Platform-as-a-Service cloud native hosting environments suitable for any websites, web applications, and
+              datbases.
+              <br><br>
+              <button type="button" class=" bg-gr shadow btn btn-outline-dark" data-bs-toggle="modal"
+                data-bs-target="#paas_modal"> <i class="fa-solid fa-circle-info"></i> More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fb-item-thin headings-mono" style="position: relative; z-index: 1;">
+        <img id="CloudImg" style="display: none;" class="img-fluid img-thumbnail" type="image/png"
+          src="{% static 'cloud1.png' %}" />
+      </div>
+    </div>
+    <br><br>
+    <div class="fb-container text-dark" style="position: relative; z-index: 1;">
+      <div class="fb-item-thin headings-mono">
+        <img id="CmsImg" style="display: none;" class="img-fluid img-thumbnail" type="image/png"
+          src="{% static 'cloud1.png' %}" />
+      </div>
+      <div class="fb-item text-dark" style="position: relative; z-index: 1;">
+        <div class="rounded bg-light shadow p-2">
+          <div class="card-body">
+            <h2 class="card-title text-center mb-3 headings-mono">Customer & Business Management Software</h2>
+            <div id="CmsView" style="display: none;"
+              class="card-text text-center headings-mono border rounded shadow bg-light p-3">
+              Modular business managment software for Startups and SMEs includs client, financial, project & task
+              management and more.
+              <br><br>
+              <button type="button" class=" bg-gr shadow btn btn-outline-dark" data-bs-toggle="modal"
+                data-bs-target="#bms_modal">
+                <i class="fa-solid fa-circle-info"></i> More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br>
+    <div class="fb-container text-dark">
+      <div class="fb-item text-dark" style="position: relative; z-index: 1;">
+        <div class="rounded bg-light shadow p-2">
+          <div class="card-body">
+            <h2 class="card-title text-center mb-3 headings-mono">Free & Open Source Education Platform</h2>
+            <div id="EduView" style="display: none;"
+              class="card-text text-center headings-mono border rounded shadow bg-light p-3">
+              Elearning software project aimed at free educaitonal resourses for anyone wanting to complete a matric in
+              South
+              Africa.
+              <br><br>
+              <button type="button" class="bg-gr shadow btn btn-outline-dark" data-bs-toggle="modal"
+                data-bs-target="#edu_modal">
+                <i class="fa-solid fa-circle-info"></i> More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fb-item-thin headings-mono" style="position: relative; z-index: 1;">
+        <img id="EduImg" style="display: none;" class="img-fluid img-thumbnail" type="image/svg"
+          src="{% static 'cloud1.png' %}" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-imgb2 text-dark" style="padding-top: 80px; padding-bottom:90px;">
+  <h5 class="headings-mono text-center text-dark">Read more about how we do things.</h5>
+  <br> <br>
+  <div class="fb-container">
+    <div class="fb-item-products text-center rounded shadow p-2 bg-d2 text-light"
+      style="position: relative; z-index: 1;">
+      <div class="card-body">
+        <h2 class="card-title text-center headings-mono"><i class="fa-brands fa-python fa-2xl"></i> Python</h2>
+        <br>
+        <div id="webView" style="display: none;">
+          We use popular web frameworks such as <a href="#">Django</a>, <a href="#">Flask</a>, <a href="#">FastAPI</a>.
+        </div>
+      </div>
+    </div>
+    <div class="fb-item-products text-center rounded shadow p-2 bg-d2 text-light"
+      style="position: relative; z-index: 1;">
+      <div class="card-body">
+        <h2 class="card-title text-center headings-mono"><i class="fa-brands fa-js fa-2xl"></i> JavaScript</h2>
+        <br>
+        <div id="jsView" style="display: none;">
+          Pure <a href="#">JavaScript</a> or old school <a href="#">jQuery</a> generally gets the job done.
+        </div>
+      </div>
+    </div>
+    <div class="fb-item-products text-center rounded shadow p-2 bg-d2 text-light"
+      style="position: relative; z-index: 1;">
+      <div class="card-body">
+        <h2 class="card-title text-center headings-mono"><i class="fa-brands fa-docker fa-2xl"></i> Docker</h2>
+        <br>
+        <div id="dockerView" style="display: none;">
+          Containerize all the things. We love <a href="#">Docker</a> and <a href="#">Linux</a>.
+        </div>
+      </div>
+    </div>
+  </div>
+  <br> <br>
+  <div class="fb-container">
+    <div class="fb-item-products text-center rounded shadow p-2 bg-d2 text-light"
+      style="position: relative; z-index: 1;">
+      <div class="card-body">
+        <h2 class="card-title text-center headings-mono"><i class="fa-brands fa-unity fa-2xl"></i> Unity3D</h2>
+        <br>
+        <div id="unityView" style="display: none;">
+          Desktop or Mobile applications using c# and <a href="#">Unity3D</a>.
+        </div>
+      </div>
+    </div>
+  </div>
+  <br> <br>
+  <div class="fb-container">
+    <div class="fb-item-products text-center rounded shadow p-2 bg-d2 text-light"
+      style="position: relative; z-index: 1;">
+      <div class="card-body">
+        <h2 class="card-title text-center headings-mono"><i class="fa-brands fa-jenkins fa-2xl"></i> Jenkins</h2>
+        <br>
+        <div id="jenkinsView" style="display: none;">
+          Distributed <a href="#">Jenkins</a> build nodes running in containers building containers.
+        </div>
+      </div>
+    </div>
+    <div class="fb-item-products text-center rounded shadow p-2 bg-d2 text-light"
+      style="position: relative; z-index: 1;">
+      <div class="card-body">
+        <h2 class="card-title text-center headings-mono"><i class="fa-brands fa-gitlab  fa-2xl"></i> Gitlab</h2>
+        <br>
+        <div id="gitView" style="display: none;">
+          Source control. What more can I say. <a href="#">Gitlab</a> runs in a container.
+        </div>
+      </div>
+    </div>
+  </div>
+  <br> <br>
+  <div class="fb-container">
+    <div class="fb-item-products text-center rounded shadow p-2 bg-d2 text-light"
+      style="position: relative; z-index: 1;">
+      <div class="card-body">
+        <h2 class="card-title text-center headings-mono"><i class="fa-brands fa-aws fa-2xl"></i> EC2</h2>
+        <br>
+        <div id="awsView" style="display: none;">
+          We deploy all production containers on <a href="#">EC2</a>. Public cloud is the best.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-d2" style="padding-top: 80px; padding-bottom:90px;">
+  <div id="projectsScroll"></div>
+  <h2 class="headings-mono text-center text-light">Portfolio</h2>
+  <br> <br>
+  <h2 class="card-title text-center mb-3 headings-mono">Web Projects</h2>
+  <div class="fb-container">
+    <div class="fb-item-products text-center text-dark rounded shadow bg-light p-2" style="z-index: 1;">
+      <div class="card-body">
+        <h2 class="card-title text-center mb-3 headings-mono">Inventory Management</h2>
+        <div class="webView" style="display: none;">
+          <div class="card-text text-center headings-mono border rounded shadow bg-light  p-3">
+            Secure cloud hosting environments suitable for websites, web applications, datbases and more.
+            <br><br>
+            <button type="button" class="bg-gr shadow btn btn-outline-dark" data-bs-toggle="modal"
+              data-bs-target="#edu_modal"><i class="fa-solid fa-circle-info"></i> More Info</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fb-item-products text-center text-dark rounded shadow bg-light p-2" style="z-index: 1;">
+      <div class="card-body">
+        <h2 class="card-title text-center mb-3 headings-mono">Forex Data Analytics</h2>
+        <div class="webView" style="display: none;">
+          <div class="card-text text-center headings-mono border rounded shadow bg-light p-3">
+            Modular customer/enterprise managment software designed to intergrate into your business workflow.
+            <br><br>
+            <button type="button" class="bg-gr shadow btn btn-outline-dark" data-bs-toggle="modal"
+              data-bs-target="#edu_modal"><i class="fa-solid fa-circle-info"></i> More Info</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fb-item-products text-center text-dark rounded shadow bg-light p-2" style="z-index: 1;">
+      <div class="card-body">
+        <h2 class="card-title text-center mb-3 headings-mono">Classifieds Content Manager </h2>
+        <div class="webView" style="display: none;">
+          <div class="card-text text-center headings-mono border rounded shadow bg-light p-3">
+            Elearning software for all phases in the education proccess aimed at free educaiton.
+            <br><br>
+            <button type="button" class="bg-gr shadow btn btn-outline-dark" data-bs-toggle="modal"
+              data-bs-target="#edu_modal"><i class="fa-solid fa-circle-info"></i> More Info</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br> <br>
+  <h2 class="card-title text-center mb-3 headings-mono">Software Projects</h2>
+  <div class="fb-container">
+    <div class="fb-item-products text-center text-dark rounded shadow bg-light p-2" style=" z-index: 1;">
+      <div class="card-body">
+        <h2 class="card-title text-center mb-3 headings-mono">2D RPG Sub-Systems and Demo Level</h2>
+        <div class="softwareView" style="display: none;">
+          <div class="card-text text-center headings-mono border rounded shadow bg-light  p-3">
+            Secure cloud hosting environments suitable for websites, web applications, datbases and more.
+            <br><br>
+            <button type="button" class="bg-gr shadow btn btn-outline-dark" data-bs-toggle="modal"
+              data-bs-target="#edu_modal"><i class="fa-solid fa-circle-info"></i> More Info</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fb-item-products text-center text-dark rounded shadow bg-light p-2" style="z-index: 1;">
+      <div class="card-body">
+        <h2 class="card-title text-center mb-3 headings-mono">3D World & Terrain Generation</h2>
+        <div class="softwareView" style="display: none;">
+          <div class="card-text text-center headings-mono border rounded shadow bg-light p-3">
+            Modular customer/enterprise managment software designed to intergrate into your business workflow.
+            <br><br>
+            <button type="button" class="bg-gr shadow btn btn-outline-dark" data-bs-toggle="modal"
+              data-bs-target="#edu_modal"><i class="fa-solid fa-circle-info"></i> More Info</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade faded-bk" id="web_modal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content bg-bk">
+      <div class="modal-body">
+        <div class="container bg-gr text-dark shadow rounded p-2">
+          WEB
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade faded-bk" id="cloud_modal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content bg-bk">
+      <div class="modal-body">
+        <div class="container bg-gr text-dark shadow rounded p-2">
+          CLOUD
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade faded-bk" id="software_modal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content bg-bk">
+      <div class="modal-body">
+        <div class="container bg-gr text-dark shadow rounded p-2">
+          SOFTWARE
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade faded-bk" id="paas_modal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content bg-bk">
+      <div class="modal-body">
+        <div class="container bg-gr text-dark shadow rounded p-2">
+          PAAS
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade faded-bk" id="bms_modal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content bg-bk">
+      <div class="modal-body">
+        <div class="container bg-gr text-dark shadow rounded p-2">
+          CRM
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade faded-bk" id="edu_modal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content bg-bk">
+      <div class="modal-body">
+        <div class="container bg-gr text-dark shadow rounded p-2">
+          EDU
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

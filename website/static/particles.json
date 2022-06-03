@@ -1,0 +1,110 @@
+{
+    "particles": {
+      "number": {
+        "value": 50,
+        "density": {
+          "enable": true,
+          "value_area": 800
+        }
+      },
+      "color": {
+        "value": "#d3d3d3"
+      },
+      "shape": {
+        "type": "image",
+        "stroke": {
+          "width": 0,
+          "color": "#d3d3d3"
+        },
+        "polygon": {
+          "nb_sides": 4
+        },
+        "image": {
+          "src": "http://silimasoftware.localhost/static/mug.png",
+          "width": 20,
+          "height": 20
+        }
+      },
+      "opacity": {
+        "value": 0.5,
+        "random": false,
+        "anim": {
+          "enable": false,
+          "speed": 2,
+          "opacity_min": 0.1,
+          "sync": false
+        }
+      },
+      "size": {
+        "value": 10,
+        "random": true,
+        "anim": {
+          "enable": false,
+          "speed": 80,
+          "size_min": 0.1,
+          "sync": false
+        }
+      },
+      "line_linked": {
+        "enable": false,
+        "distance": 300,
+        "color": "#000000",
+        "opacity": 0.2,
+        "width": 1
+      },
+      "move": {
+        "enable": true,
+        "speed": 0.5,
+        "direction": "none",
+        "random": false,
+        "straight": false,
+        "out_mode": "out",
+        "bounce": false,
+        "attract": {
+          "enable": false,
+          "rotateX": 600,
+          "rotateY": 1200
+        }
+      }
+    },
+    "interactivity": {
+      "detect_on": "window",
+      "events": {
+        "onhover": {
+          "enable": true,
+          "mode": "repulse"
+        },
+        "onclick": {
+          "enable": true,
+          "mode": "push"
+        },
+        "resize": true
+      },
+      "modes": {
+        "grab": {
+          "distance": 800,
+          "line_linked": {
+            "opacity": 1
+          }
+        },
+        "bubble": {
+          "distance": 400,
+          "size": 80,
+          "duration": 2,
+          "opacity": 0.8,
+          "speed": 3
+        },
+        "repulse": {
+          "distance": 100,
+          "duration": 0.4
+        },
+        "push": {
+          "particles_nb": 4
+        },
+        "remove": {
+          "particles_nb": 2
+        }
+      }
+    },
+    "retina_detect": true
+  }
