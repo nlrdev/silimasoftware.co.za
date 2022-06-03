@@ -40,9 +40,7 @@ services:
 
 volumes:
   silimasoftware_data:
-    external: true
   website_data:
-    external: true
 
 networks:
   default:
