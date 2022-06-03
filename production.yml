@@ -3,7 +3,6 @@ version: "3"
 services:
   silimasoftware:
     build: .
-    image: localhost:5000/silimasoftware:latest
     env_file:
       - .env
     restart: always
