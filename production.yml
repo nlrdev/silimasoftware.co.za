@@ -10,7 +10,7 @@ services:
     volumes:
       - website_data:/usr/src/app
     entrypoint: 
-      - setup.sh
+      - ./setup.sh
 
 
   silimasoftware_nginx:
