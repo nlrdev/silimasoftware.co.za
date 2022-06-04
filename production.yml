@@ -6,10 +6,11 @@ services:
     env_file:
       - .env
     restart: always
-    command: /bin/sh -c "/usr/src/app/setup.sh"
     container_name: silimasoftware
     volumes:
       - website_data:/usr/src/app
+    entrypoint: 
+      - setup.sh
 
 
   silimasoftware_nginx:
