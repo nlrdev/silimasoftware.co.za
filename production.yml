@@ -6,8 +6,7 @@ services:
     env_file:
       - .env
     restart: always
-    command: bash -c "python manage.py makemigrations && python manage.py migrate &&
-      gunicorn config.wsgi:application  -b 0.0.0.0:80"
+    command: bash -c "chmod u+x setup.bash" && "./setup.bash"
     container_name: silimasoftware
     volumes:
       - website_data:/usr/src/app
