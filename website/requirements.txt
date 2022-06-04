@@ -1,0 +1,10 @@
+django
+gunicorn
+psycopg2
+djangorestframework
+django-filter
+django-mathfilters
+django-allauth
+django-crispy-forms
+django-environ
+bleach
