@@ -6,7 +6,7 @@ services:
     env_file:
       - .env
     restart: always
-    command: bash -c "chmod u+x setup.bash" && "./setup.bash"
+    command: /bin/sh -c "setup.sh"
     container_name: silimasoftware
     volumes:
       - website_data:/usr/src/app
