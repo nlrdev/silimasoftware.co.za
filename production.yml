@@ -9,8 +9,6 @@ services:
     container_name: silimasoftware
     volumes:
       - website_data:/usr/src/app
-    entrypoint: 
-      - ./setup.sh
 
 
   silimasoftware_nginx:
