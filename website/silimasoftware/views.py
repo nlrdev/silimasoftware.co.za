@@ -1,4 +1,4 @@
-from .core import (
+from .util import (
     HttpResponse,
     SMTPException,
     View,

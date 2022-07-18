@@ -62,27 +62,31 @@ tr.htb:hover {
 .bg-img {
     background-image: url("http://silimasoftware.localhost/static/a2.jpg");
     background-repeat: no-repeat;
-    background-color: #031f30;
+    background-position: center;
+    background-size: cover;
     height: 900px;
+    background-color: #031f30;
 }
 
 .bg-imgb {
     background-position: center;
-    background-size:cover;
+    background-size: cover;
     height: 500px;
     background-image: url("http://silimasoftware.localhost/static/a1.jpg");
 }
 
 .bg-imgb1 {
     background-position: center;
-    background-size:cover;
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     background-image: url("http://silimasoftware.localhost/static/coffee2.jpg");
 }
 
 .bg-contact {
+    background-repeat: no-repeat;
     background-position: center;
-    background-size:cover;
+    background-size: cover;
     background-image: url("http://silimasoftware.localhost/static/contact.jpg");
 }
 
@@ -97,7 +101,7 @@ tr.htb:hover {
 }
 
 .bg-d1 {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: #031f30ef;
 }
 
 .bg-d2 {
@@ -195,12 +199,12 @@ tr.htb:hover {
     font-size: 0.9rem;
 }
 
-.nav_bg{
+.nav_bg {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
 .nav_font {
-    box-sizing:border-box;
+    box-sizing: border-box;
     color: #ffffff !important;
 }
 

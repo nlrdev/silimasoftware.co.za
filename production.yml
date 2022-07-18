@@ -12,7 +12,6 @@ services:
     volumes:
       - website_data:/usr/src/app
 
-
   silimasoftware_nginx:
     build: ./nginx
     restart: always
