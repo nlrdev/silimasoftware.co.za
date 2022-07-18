@@ -15,9 +15,9 @@
                     <a onclick="scrollToEle('#productsScroll')" type="button" class="nav-link nav_bg nav_font">
                         products <i class="fa-solid fa-server float-right"></i>
                     </a>
-                    <a title="Coming Soon" onclick="scrollToEle('#projectsScroll')" type="button" class="nav-link nav_bg nav_font">
+                    <!--a title="Coming Soon" onclick="scrollToEle('#projectsScroll')" type="button" class="nav-link nav_bg nav_font">
                         Portfolio <i class="fa-solid fa-diagram-project float-right"></i>
-                    </a>
+                    </a-->
                 </div>
                 {% endif %}
             </div>
@@ -25,10 +25,10 @@
             {% if 'about' in request.path %}nav_selected{% endif %}">
                 About
             </a>
-            <a href="{% url 'silimasoftware' 'blog' %}" class="nav-link nav_font
+            <!--a href="{% url 'silimasoftware' 'blog' %}" class="nav-link nav_font
             {% if 'blog' in request.path %}nav_selected{% endif %}">
                 Blog
-            </a>
+            </a-->
             <a href="{% url 'silimasoftware' 'contact' %}" class="nav-link nav_font
             {% if 'contact' in request.path %}nav_selected{% endif %}">
                 Contact

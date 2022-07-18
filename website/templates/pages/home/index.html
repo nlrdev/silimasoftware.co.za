@@ -35,7 +35,7 @@
 
 <div class="bg-d2" style="padding-top: 80px; padding-bottom:90px; ">
   <div id="productsScroll"></div>
-  <h2 class="headings-mono text-center text-light">Featured Products</h2>
+  <h2 class="headings-mono text-center text-light">Featured Projects</h2>
   <br>
   <div class="rounded p-3">
     <div class="fb-container text-dark">
@@ -56,20 +56,20 @@
         </div>
       </div>
       <div class="fb-item-thin headings-mono" style="position: relative; z-index: 1;">
-        <img id="CloudImg" style="display: none;" class="img-fluid img-thumbnail" type="image/png"
+        <img id="CloudImg" style="display: none;  height:300px;" class="img-fluid img-thumbnail" type="image/png"
           src="{% static 'cloud1.png' %}" />
       </div>
     </div>
     <br><br>
     <div class="fb-container text-dark" style="position: relative; z-index: 1;">
       <div class="fb-item-thin headings-mono">
-        <img id="CmsImg" style="display: none;" class="img-fluid img-thumbnail" type="image/png"
-          src="{% static 'cloud1.png' %}" />
+        <img id="CmsImg" style="display: none;  height:300px; " class="img-fluid img-thumbnail" type="image/png"
+          src="{% static 'analytics.png' %}" />
       </div>
       <div class="fb-item text-dark" style="position: relative; z-index: 1;">
         <div class="rounded bg-light shadow p-2">
           <div class="card-body">
-            <h2 class="card-title text-center mb-3 headings-mono">Customer & Business Management Software</h2>
+            <h2 class="card-title text-center mb-3 headings-mono">Business Management & Analytics</h2>
             <div id="CmsView" style="display: none;"
               class="card-text text-center headings-mono border rounded shadow bg-light p-3">
               Modular business managment software for Startups and SMEs includs client, financial, project & task
@@ -106,7 +106,7 @@
       </div>
       <div class="fb-item-thin headings-mono" style="position: relative; z-index: 1;">
         <img id="EduImg" style="display: none;" class="img-fluid img-thumbnail" type="image/svg"
-          src="{% static 'cloud1.png' %}" />
+          src="{% static '#' %}" />
       </div>
     </div>
   </div>
@@ -198,145 +198,154 @@
   </div>
 </div>
 
-<div style="display: none;">
-<div class="bg-d2" style="padding-top: 80px; padding-bottom:90px;">
-  <div id="projectsScroll"></div>
-  <h2 class="headings-mono text-center text-light">Portfolio</h2>
-  <br> <br>
-  <h2 class="card-title text-center mb-3 headings-mono">Web Projects</h2>
-  <div class="fb-container">
-    <div class="fb-item-products text-center text-dark rounded shadow bg-light p-2" style="z-index: 1;">
-      <div class="card-body">
-        <h2 class="card-title text-center mb-3 headings-mono">Inventory Management</h2>
-        <div class="webView" style="display: none;">
-          <div class="card-text text-center headings-mono border rounded shadow bg-light  p-3">
-            <br><br>
-            <button type="button" class="bg-gr shadow btn btn-outline-dark" data-bs-toggle="modal"
-              data-bs-target="#edu_modal"><i class="fa-solid fa-circle-info"></i> More Info</button>
+<div>
+  <div class="bg-d2" style="padding-top: 80px; padding-bottom:90px;">
+    <div id="projectsScroll"></div>
+    <h2 class="headings-mono text-center text-light">Portfolio</h2>
+    <br> <br>
+    <h2 class="card-title text-center mb-3 headings-mono">Web Projects</h2>
+    <div class="fb-container">
+      <div class="fb-item-products text-center text-dark rounded shadow bg-light p-2" style="z-index: 1;">
+        <div class="card-body">
+          <h2 class="card-title text-center mb-3 headings-mono">Inventory Management</h2>
+          <div class="webView" style="display: none;">
+            <div class="card-text text-center headings-mono border rounded shadow bg-light  p-3">
+              <img id="CloudImg" class="img-fluid img-thumbnail" type="image/png" style="height: 180px;"
+                src="{% static 'ims.png' %}" />
+              <br>
+              <button type="button" class="bg-gr shadow btn btn-outline-dark" data-bs-toggle="modal"
+                data-bs-target="#edu_modal"><i class="fa-solid fa-circle-info"></i> More Info</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fb-item-products text-center text-dark rounded shadow bg-light p-2" style="z-index: 1;">
+        <div class="card-body">
+          <h2 class="card-title text-center mb-3 headings-mono">Auction-House Data Analytics</h2>
+          <div class="webView" style="display: none;">
+            <div class="card-text text-center headings-mono border rounded shadow bg-light p-3">
+              <img id="CloudImg" class="img-fluid img-thumbnail" type="image/png" style="height: 180px;"
+                src="{% static 'wowahtk.png' %}" />
+              <br>
+              <button type="button" class="bg-gr shadow btn btn-outline-dark" data-bs-toggle="modal"
+                data-bs-target="#edu_modal"><i class="fa-solid fa-circle-info"></i> More Info</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fb-item-products text-center text-dark rounded shadow bg-light p-2" style="z-index: 1;">
+        <div class="card-body">
+          <h2 class="card-title text-center mb-3 headings-mono">Classifieds Content Manager </h2>
+          <div class="webView" style="display: none;">
+            <div class="card-text text-center headings-mono border rounded shadow bg-light p-3">
+              <img id="CloudImg" class="img-fluid img-thumbnail" type="image/png" style="height: 180px;"
+                src="{% static '#' %}" />
+              <br>
+              <button type="button" class="bg-gr shadow btn btn-outline-dark" data-bs-toggle="modal"
+                data-bs-target="#edu_modal"><i class="fa-solid fa-circle-info"></i> More Info</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="fb-item-products text-center text-dark rounded shadow bg-light p-2" style="z-index: 1;">
-      <div class="card-body">
-        <h2 class="card-title text-center mb-3 headings-mono">Forex Data Analytics</h2>
-        <div class="webView" style="display: none;">
-          <div class="card-text text-center headings-mono border rounded shadow bg-light p-3">
-            <br><br>
-            <button type="button" class="bg-gr shadow btn btn-outline-dark" data-bs-toggle="modal"
-              data-bs-target="#edu_modal"><i class="fa-solid fa-circle-info"></i> More Info</button>
+    <br> <br>
+    <h2 class="card-title text-center mb-3 headings-mono">Software Projects</h2>
+    <div class="fb-container">
+      <div class="fb-item-products text-center text-dark rounded shadow bg-light p-2" style=" z-index: 1;">
+        <div class="card-body">
+          <h2 class="card-title text-center mb-3 headings-mono">2D RPG Sub-Systems and Demo Level</h2>
+          <div class="softwareView" style="display: none;">
+            <div class="card-text text-center headings-mono border rounded shadow bg-light  p-3">
+              <img id="CloudImg" class="img-fluid img-thumbnail" type="image/png" style="height: 180px;"
+              src="{% static '#' %}" />
+            <br>
+              <button type="button" class="bg-gr shadow btn btn-outline-dark" data-bs-toggle="modal"
+                data-bs-target="#edu_modal"><i class="fa-solid fa-circle-info"></i> More Info</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="fb-item-products text-center text-dark rounded shadow bg-light p-2" style="z-index: 1;">
-      <div class="card-body">
-        <h2 class="card-title text-center mb-3 headings-mono">Classifieds Content Manager </h2>
-        <div class="webView" style="display: none;">
-          <div class="card-text text-center headings-mono border rounded shadow bg-light p-3">
-            <br><br>
-            <button type="button" class="bg-gr shadow btn btn-outline-dark" data-bs-toggle="modal"
-              data-bs-target="#edu_modal"><i class="fa-solid fa-circle-info"></i> More Info</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <br> <br>
-  <h2 class="card-title text-center mb-3 headings-mono">Software Projects</h2>
-  <div class="fb-container">
-    <div class="fb-item-products text-center text-dark rounded shadow bg-light p-2" style=" z-index: 1;">
-      <div class="card-body">
-        <h2 class="card-title text-center mb-3 headings-mono">2D RPG Sub-Systems and Demo Level</h2>
-        <div class="softwareView" style="display: none;">
-          <div class="card-text text-center headings-mono border rounded shadow bg-light  p-3">
-            <br><br>
-            <button type="button" class="bg-gr shadow btn btn-outline-dark" data-bs-toggle="modal"
-              data-bs-target="#edu_modal"><i class="fa-solid fa-circle-info"></i> More Info</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="fb-item-products text-center text-dark rounded shadow bg-light p-2" style="z-index: 1;">
-      <div class="card-body">
-        <h2 class="card-title text-center mb-3 headings-mono">3D World & Terrain Generation</h2>
-        <div class="softwareView" style="display: none;">
-          <div class="card-text text-center headings-mono border rounded shadow bg-light p-3">
-            <br><br>
-            <button type="button" class="bg-gr shadow btn btn-outline-dark" data-bs-toggle="modal"
-              data-bs-target="#edu_modal"><i class="fa-solid fa-circle-info"></i> More Info</button>
+      <div class="fb-item-products text-center text-dark rounded shadow bg-light p-2" style="z-index: 1;">
+        <div class="card-body">
+          <h2 class="card-title text-center mb-3 headings-mono">3D World & Terrain Generation</h2>
+          <div class="softwareView" style="display: none;">
+            <div class="card-text text-center headings-mono border rounded shadow bg-light p-3">
+              <img id="CloudImg" class="img-fluid img-thumbnail" type="image/png" style="height: 180px;"
+                src="{% static '#' %}" />
+              <br>
+              <button type="button" class="bg-gr shadow btn btn-outline-dark" data-bs-toggle="modal"
+                data-bs-target="#edu_modal"><i class="fa-solid fa-circle-info"></i> More Info</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+<div class="modal fade faded-bk" id="web_modal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content bg-bk">
+      <div class="modal-body">
+        <div class="container bg-gr text-dark shadow rounded p-2">
+          WEB
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-
-  <div class="modal fade faded-bk" id="web_modal" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content bg-bk">
-        <div class="modal-body">
-          <div class="container bg-gr text-dark shadow rounded p-2">
-            WEB
-          </div>
+<div class="modal fade faded-bk" id="cloud_modal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content bg-bk">
+      <div class="modal-body">
+        <div class="container bg-gr text-dark shadow rounded p-2">
+          CLOUD
         </div>
       </div>
     </div>
   </div>
-  <div class="modal fade faded-bk" id="cloud_modal" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content bg-bk">
-        <div class="modal-body">
-          <div class="container bg-gr text-dark shadow rounded p-2">
-            CLOUD
-          </div>
+</div>
+<div class="modal fade faded-bk" id="software_modal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content bg-bk">
+      <div class="modal-body">
+        <div class="container bg-gr text-dark shadow rounded p-2">
+          SOFTWARE
         </div>
       </div>
     </div>
   </div>
-  <div class="modal fade faded-bk" id="software_modal" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content bg-bk">
-        <div class="modal-body">
-          <div class="container bg-gr text-dark shadow rounded p-2">
-            SOFTWARE
-          </div>
+</div>
+<div class="modal fade faded-bk" id="paas_modal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content bg-bk">
+      <div class="modal-body">
+        <div class="container bg-gr text-dark shadow rounded p-2">
+          PAAS
         </div>
       </div>
     </div>
   </div>
-  <div class="modal fade faded-bk" id="paas_modal" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content bg-bk">
-        <div class="modal-body">
-          <div class="container bg-gr text-dark shadow rounded p-2">
-            PAAS
-          </div>
+</div>
+<div class="modal fade faded-bk" id="bms_modal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content bg-bk">
+      <div class="modal-body">
+        <div class="container bg-gr text-dark shadow rounded p-2">
+          CRM
         </div>
       </div>
     </div>
   </div>
-  <div class="modal fade faded-bk" id="bms_modal" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content bg-bk">
-        <div class="modal-body">
-          <div class="container bg-gr text-dark shadow rounded p-2">
-            CRM
-          </div>
+</div>
+<div class="modal fade faded-bk" id="edu_modal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content bg-bk">
+      <div class="modal-body">
+        <div class="container bg-gr text-dark shadow rounded p-2">
+          EDU
         </div>
       </div>
     </div>
   </div>
-  <div class="modal fade faded-bk" id="edu_modal" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content bg-bk">
-        <div class="modal-body">
-          <div class="container bg-gr text-dark shadow rounded p-2">
-            EDU
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
+</div>
