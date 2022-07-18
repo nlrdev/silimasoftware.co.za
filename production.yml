@@ -20,7 +20,7 @@ services:
       - "traefik.enable=true"
       - "traefik.http.routers.silimasoftware_nginx.entrypoints=websecure"
       - "traefik.http.routers.silimasoftware_nginx.tls.certresolver=sslresolver"
-      - "traefik.http.routers.silimasoftware_nginx.rule=Host(`alpha.silimasoftware.co.za`)"
+      - "traefik.http.routers.silimasoftware_nginx.rule=Host(`silimasoftware.co.za`)"
       - "traefik.http.services.silimasoftware_nginx.loadbalancer.server.port=80"
     volumes:
       - website_data:/usr/src/app
