@@ -52,7 +52,7 @@ tr.htb:hover {
 }
 
 .big-font {
-    font-size: 1.4rem;
+    font-size: 4rem ;
 }
 
 .big-xl {
@@ -60,7 +60,7 @@ tr.htb:hover {
 }
 
 .bg-img {
-    background-image: url("http://silimasoftware.localhost/static/a2.jpg");
+    background-image: url("../a2.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -69,32 +69,37 @@ tr.htb:hover {
 }
 
 .bg-imgb {
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 500px;
-    background-image: url("http://silimasoftware.localhost/static/a1.jpg");
+    height: 900px;
+    background-image: url("../a1.jpg");
 }
 
 .bg-imgb1 {
     background-position: center;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-    background-image: url("http://silimasoftware.localhost/static/coffee2.jpg");
+    background-image: url("../coffee2.jpg");
 }
 
 .bg-contact {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: url("http://silimasoftware.localhost/static/contact.jpg");
+    background-image: url("../contact.jpg");
 }
 
+
+.bg-invs {
+    background-color: rgba(0, 0, 0, 0.3);
+}
 
 
 .bg-obs {
     background-color: rgba(0, 0, 0, 0.6);
 }
+
 
 .bg-lt {
     background-color: #e2e5e7;

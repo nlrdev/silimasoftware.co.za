@@ -5,30 +5,18 @@
     </button>
     <div class="collapse navbar-collapse justify-content-center" id="main_nav">
         <div class="nav nav_bg">
-            <div class="dropdown">
-                <a href="{% url 'silimasoftware' %}" type="button" class="nav-link nav_font dropbtn
-                        {% if page == "home" %}nav_selected{% endif %}">
-                    Silimasoftware
-                </a>
-                {% if page == "home" %}
-                <div class="dropdown-content">
-                    <a onclick="scrollToEle('#productsScroll')" type="button" class="nav-link nav_bg nav_font">
-                        products <i class="fa-solid fa-server float-right"></i>
-                    </a>
-                    <!--a title="Coming Soon" onclick="scrollToEle('#projectsScroll')" type="button" class="nav-link nav_bg nav_font">
-                        Portfolio <i class="fa-solid fa-diagram-project float-right"></i>
-                    </a-->
-                </div>
-                {% endif %}
-            </div>
+            <a href="{% url 'silimasoftware' %}" type="button" class="nav-link nav_font
+                    {% if page == "home" %}nav_selected{% endif %}">
+                Silimasoftware
+            </a>
             <a href="{% url 'silimasoftware' 'about' %}" class="nav-link nav_font
             {% if 'about' in request.path %}nav_selected{% endif %}">
                 About
             </a>
-            <!--a href="{% url 'silimasoftware' 'blog' %}" class="nav-link nav_font
+            <a href="{% url 'silimasoftware' 'blog' %}" class="nav-link nav_font
             {% if 'blog' in request.path %}nav_selected{% endif %}">
                 Blog
-            </a-->
+            </a>
             <a href="{% url 'silimasoftware' 'contact' %}" class="nav-link nav_font
             {% if 'contact' in request.path %}nav_selected{% endif %}">
                 Contact
