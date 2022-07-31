@@ -223,7 +223,8 @@ tr.htb:hover {
 }
 
 .nav_selected {
-    color: #38a2e4 !important;
+    background-color: rgb(255, 255, 255) !important;
+    color: #000000 !important;
 }
 
 .big-font {
