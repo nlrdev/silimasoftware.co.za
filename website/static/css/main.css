@@ -2,6 +2,7 @@ body,
 html {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    background-color: #000000;
     color: #d3d4d4 !important;
     scroll-behavior: smooth;
 }
@@ -59,40 +60,41 @@ tr.htb:hover {
     font-size: 3rem;
 }
 
-.bg-img {
-    background-image: url("../a2.jpg");
+
+.bg-home-img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../home.jpg");
+}
+
+.bg-about-img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    background-image: url("../about.jpg");
+}
+
+.bg-blog-img {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 900px;
-    background-color: #031f30;
+    height: 90vh;
+    background-image: url("../blog.jpg");
 }
 
-.bg-imgb {
+.bg-contact-img {
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-    height: 900px;
-    background-image: url("../a1.jpg");
-}
-
-.bg-imgb1 {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url("../coffee2.jpg");
-}
-
-.bg-contact {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-size: initial;
+    height: 90vh;
     background-image: url("../contact.jpg");
 }
 
 
 .bg-invs {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0);
 }
 
 
@@ -106,7 +108,7 @@ tr.htb:hover {
 }
 
 .bg-d1 {
-    background-color: #031f30ef;
+    background-color: #070b0ece;
 }
 
 .bg-d2 {
