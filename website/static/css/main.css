@@ -53,7 +53,7 @@ tr.htb:hover {
 }
 
 .big-font {
-    font-size: 4rem ;
+    font-size: 4rem;
 }
 
 .big-xl {
@@ -87,7 +87,7 @@ tr.htb:hover {
 .bg-contact-img {
     background-repeat: no-repeat;
     background-position: center;
-    background-size: initial;
+    background-size: cover;
     height: 90vh;
     background-image: url("../contact.jpg");
 }
@@ -100,6 +100,10 @@ tr.htb:hover {
 
 .bg-obs {
     background-color: rgba(0, 0, 0, 0.6);
+}
+
+.bg-ows {
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
 
@@ -116,14 +120,13 @@ tr.htb:hover {
 }
 
 .fb-item {
-    width: 520px;
-    margin: 10px;
+    width: 570px;
+    margin: 2px;
 }
 
 .fb-item-thin {
-    padding-top: 5px;
     width: 420px;
-    margin: 10px;
+    margin: 2px;
 }
 
 .fb-container {
@@ -135,12 +138,12 @@ tr.htb:hover {
 }
 
 .fb-item-wide {
-    width: 724px;
+    width: 924px;
     margin: 2px;
 }
 
 .fb-item-products {
-    width: 360px;
+    width: 460px;
     margin: 2px;
 }
 
@@ -277,9 +280,27 @@ img {
     height: auto;
 }
 
-.makebig {
-    transform: scale(1.25);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+.grow {
+    position: relative;
+    transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    transform: scale(1.1);
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.123);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn-grow {
+    transition: all .2s ease-in-out;
+}
+.btn-grow:hover {
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    transform: scale(1.02);
 }
 
 .font-sm {

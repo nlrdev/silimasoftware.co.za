@@ -1,83 +1,43 @@
 <div class="modal fade" id="software_modal" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content bg-invs border-0">
-        <div class="modal-body">
-          <button type="button" class="close btn btn-lg btn-outline-light float-right" data-bs-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-          <div class="container">
-            <div class="rounded">
-              <div class="fb-container">
-                <div class="fb-item-portfolio text-center text-dark rounded shadow bg-light p-2" style="z-index: 1;">
-                  <div class="card-body">
-                    <h2 class="card-title text-center mb-3 headings-mono">Inventory Management</h2>
-                    <div class="webView">
-                      <div class="card-text text-center headings-mono border rounded shadow bg-light  p-3">
-                        <img id="CloudImg" class="img-fluid img-thumbnail" type="image/png" style="height: 180px;"
-                          src="{% static 'ims.png' %}" />
-                        <br>
-                        <button type="button" class="bg-gr shadow btn btn-outline-dark" data-bs-toggle="modal"
-                          data-bs-target="#edu_modal"><i class="fa-solid fa-circle-info"></i> More Info</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="fb-item-portfolio text-center text-dark rounded shadow bg-light p-2" style="z-index: 1;">
-                  <div class="card-body">
-                    <h2 class="card-title text-center mb-3 headings-mono">Auction-House Data Analytics</h2>
-                    <div class="webView">
-                      <div class="card-text text-center headings-mono border rounded shadow bg-light p-3">
-                        <img id="CloudImg" class="img-fluid img-thumbnail" type="image/png" style="height: 180px;"
-                          src="{% static 'wowahtk.png' %}" />
-                        <br>
-                        <button type="button" class="bg-gr shadow btn btn-outline-dark" data-bs-toggle="modal"
-                          data-bs-target="#edu_modal"><i class="fa-solid fa-circle-info"></i> More Info</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="fb-item-portfolio text-center text-dark rounded shadow bg-light p-2" style="z-index: 1;">
-                  <div class="card-body">
-                    <h2 class="card-title text-center mb-3 headings-mono">Classifieds Content Manager </h2>
-                    <div class="webView">
-                      <div class="card-text text-center headings-mono border rounded shadow bg-light p-3">
-                        <img id="CloudImg" class="img-fluid img-thumbnail" type="image/png" style="height: 180px;"
-                          src="{% static '#' %}" />
-                        <br>
-                        <button type="button" class="bg-gr shadow btn btn-outline-dark" data-bs-toggle="modal"
-                          data-bs-target="#edu_modal"><i class="fa-solid fa-circle-info"></i> More Info</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="fb-item-portfolio text-center text-dark rounded shadow bg-light p-2" style="z-index: 1;">
-                  <div class="card-body">
-                    <h2 class="card-title text-center mb-3 headings-mono">2D RPG Sub-Systems and Demo Level</h2>
-                    <div class="softwareView">
-                      <div class="card-text text-center headings-mono border rounded shadow bg-light  p-3">
-                        <img id="CloudImg" class="img-fluid img-thumbnail" type="image/png" style="height: 180px;"
-                          src="{% static '#' %}" />
-                        <br>
-                        <button type="button" class="bg-gr shadow btn btn-outline-dark" data-bs-toggle="modal"
-                          data-bs-target="#edu_modal"><i class="fa-solid fa-circle-info"></i> More Info</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="fb-item-portfolio text-center text-dark rounded shadow bg-light p-2" style="z-index: 1;">
-                  <div class="card-body">
-                    <h2 class="card-title text-center mb-3 headings-mono">3D World & Terrain Generation</h2>
-                    <div class="softwareView">
-                      <div class="card-text text-center headings-mono border rounded shadow bg-light p-3">
-                        <img id="CloudImg" class="img-fluid img-thumbnail" type="image/png" style="height: 180px;"
-                          src="{% static '#' %}" />
-                        <br>
-                        <button type="button" class="bg-gr shadow btn btn-outline-dark" data-bs-toggle="modal"
-                          data-bs-target="#edu_modal"><i class="fa-solid fa-circle-info"></i> More Info</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+  <div class="modal-dialog modal-xl" role="document">
+    <button type="button" class="close btn btn-lg btn-outline-light float-right" data-bs-dismiss="modal"
+      aria-label="Close" style="z-index: 9999;">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <div class="modal-content bg-invs border-0">
+      <div class="modal-body">
+        <div class="container">
+          <div class="fb-container">
+            <div class="fb-item-portfolio bg-light text-center text-dark grow">
+              <div class="card-body">
+                <h2 class="card-title text-center mb-3 headings-mono">Inventory Management System</h2>
+                <img class="img-fluid img-thumbnail border border-dark" type="image/png" src="{% static 'ims.png' %}" />
+              </div>
+            </div>
+            <div class="fb-item-portfolio bg-light text-center text-dark grow">
+              <div class="card-body">
+                <h2 class="card-title text-center mb-3 headings-mono">Auction-House Dataset & Analytics</h2>
+                <img class="img-fluid img-thumbnail border border-dark" type="image/png"
+                  src="{% static 'ahtk.png' %}" />
+              </div>
+            </div>
+            <div class="fb-item-portfolio bg-light text-center text-dark grow">
+              <div class="card-body">
+                <h2 class="card-title text-center mb-3 headings-mono">Website for Import/Export Company</h2>
+                <img class="img-fluid img-thumbnail border border-dark" type="image/png"
+                  src="{% static 'website.png' %}" />
+              </div>
+            </div>
+            <div class="fb-item-portfolio bg-light text-center text-dark grow">
+              <div class="card-body">
+                <h2 class="card-title text-center mb-3 headings-mono">Notification Management System</h2>
+                <img class="img-fluid img-thumbnail border border-dark" type="image/png" src="{% static 'subnotify.png' %}" />
+              </div>
+            </div>
+            <div class="fb-item-portfolio bg-light text-center text-dark grow">
+              <div class="card-body">
+                <h2 class="card-title text-center mb-3 headings-mono">Website for Hosting Platform Storefront</h2>
+                <img class="img-fluid img-thumbnail border border-dark" type="image/png" src="{% static 'dochost.png' %}" />
               </div>
             </div>
           </div>
@@ -85,3 +45,4 @@
       </div>
     </div>
   </div>
+</div>

@@ -1,120 +1,67 @@
 <div class="modal fade" id="service_modal" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content bg-invs border-0">
-        <div class="modal-body">
-          <button type="button" class="close btn btn-lg btn-outline-light float-right" data-bs-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-          <div class="container">
-            <div class="rounded">
-              <div class="fb-container text-dark">
-                <div class="fb-item" style="position: relative; z-index: 1;">
-                  <div class="rounded bg-light shadow p-2">
-                    <div class="card-body">
-                      <h2 class="card-title text-center mb-3 headings-mono">Managed Container Hosting</h2>
-                      <div id="CloudView" class="card-text text-center headings-mono border rounded shadow bg-light p-3">
-                        Containerized cloud native hosting environments suitable for any websites, web
-                        applications, and datbases.
-                        <br><br>
-                        <button type="button" class=" bg-gr shadow btn btn-outline-dark" data-bs-toggle="modal"
-                          data-bs-target="#hosting_modal"> <i class="fa-solid fa-circle-info"></i> More Info
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="fb-item-thin headings-mono" style="position: relative; z-index: 1;">
-                  <img id="CloudImg" height:300px; class="img-fluid img-thumbnail" type="image/png"
-                    src="{% static 'cloud1.png' %}" />
-                </div>
-              </div>
-              <br><br>
-              <div class="fb-container text-dark" style="position: relative; z-index: 1;">
-                <div class="fb-item-thin headings-mono">
-                  <img id="CmsImg" height:300px; class="img-fluid img-thumbnail" type="image/png"
-                    src="{% static 'analytics.png' %}" />
-                </div>
-                <div class="fb-item text-dark" style="position: relative; z-index: 1;">
-                  <div class="rounded bg-light shadow p-2">
-                    <div class="card-body">
-                      <h2 class="card-title text-center mb-3 headings-mono">Customer Management & Analytics</h2>
-                      <div id="CmsView" class="card-text text-center headings-mono border rounded shadow bg-light p-3">
-                        Modular business managment software for Startups and SMEs includs client, financial, project &
-                        task
-                        management and more.
-                        <br><br>
-                        <button type="button" class=" bg-gr shadow btn btn-outline-dark" data-bs-toggle="modal"
-                          data-bs-target="#bms_modal">
-                          <i class="fa-solid fa-circle-info"></i> More Info
-                        </button>
-                      </div>
-                    </div>
+  <div class="modal-dialog modal-xl" role="document">
+    <button type="button" class="close btn btn-lg btn-outline-light float-right" data-bs-dismiss="modal"
+      aria-label="Close" style="z-index: 9999;">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <div class="modal-content bg-invs border-0">
+      <div class="modal-body">
+        <div class="container">
+          <div class="fb-container grow text-dark">
+            <div class="fb-item bg-light" style="position: relative;">
+              <div class="p-2">
+                <div class="card-body text-center">
+                  <h2 class="card-title text-center mb-3 headings-mono">Managed Container Hosting Solution</h2>
+                  <div class="card-text text-center headings-mono">
+                    Containerized cloud native hosting environments suitable for any websites, web
+                    applications, and datbases.
                   </div>
                 </div>
               </div>
-              <br><br>
-              <div class="fb-container text-dark">
-                <div class="fb-item text-dark" style="position: relative; z-index: 1;">
-                  <div class="rounded bg-light shadow p-2">
-                    <div class="card-body">
-                      <h2 class="card-title text-center mb-3 headings-mono">Custom Website & Content Management</h2>
-                      <div id="EduView" class="card-text text-center headings-mono border rounded shadow bg-light p-3">
-                        Elearning software project aimed at free educaitonal resourses for anyone wanting to complete a
-                        matric in
-                        South
-                        Africa.
-                        <br><br>
-                        <button type="button" class="bg-gr shadow btn btn-outline-dark" data-bs-toggle="modal"
-                          data-bs-target="#web_modal">
-                          <i class="fa-solid fa-circle-info"></i> More Info
-                        </button>
-                      </div>
-                    </div>
+            </div>
+            <div class="fb-item-thin bg-light headings-mono" style="position: relative;">
+              <img id="CloudImg" height:300px; class="img-fluid img-thumbnail" type="image/png"
+                src="{% static 'cloud1.png' %}" />
+            </div>
+          </div>
+          <div class="fb-container grow text-dark" style="position: relative;">
+            <div class="fb-item-thin bg-light headings-mono">
+              <img id="CmsImg" height:300px; class="img-fluid img-thumbnail" type="image/png"
+                src="{% static 'brm.png' %}" />
+            </div>
+            <div class="fb-item bg-light text-dark" style="position: relative;">
+              <div class="p-2">
+                <div class="card-body">
+                  <h2 class="card-title text-center mb-3 headings-mono">Customer Management & Analytics</h2>
+                  <div class="card-text text-center headings-mono">
+                    Modular business managment software for Startups and SMEs includs client, financial, project &
+                    task
+                    management and more.
                   </div>
                 </div>
-                <div class="fb-item-thin headings-mono" style="position: relative; z-index: 1;">
-                  <img id="EduImg" class="img-fluid img-thumbnail" type="image/svg" src="{% static 'website.png' %}" />
+              </div>
+            </div>
+          </div>
+          <div class="fb-container grow text-dark">
+            <div class="fb-item  bg-light text-dark" style="position: relative;">
+              <div class="p-2">
+                <div class="card-body">
+                  <h2 class="card-title text-center mb-3 headings-mono">Custom Website & Content Management</h2>
+                  <div id="EduView" class="card-text text-center headings-mono">
+                    Elearning software project aimed at free educaitonal resourses for anyone wanting to complete a
+                    matric in
+                    South
+                    Africa.
+                  </div>
                 </div>
               </div>
+            </div>
+            <div class="fb-item-thin  bg-light headings-mono" style="position: relative;">
+              <img id="EduImg" class="img-fluid img-thumbnail" type="image/svg" src="{% static 'website.png' %}" />
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-
-  <div class="modal fade bg-obs" id="hosting_modal" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content  bg-obs">
-        <div class="modal-body">
-          <div class="container bg-gr text-dark shadow rounded p-2">
-            PAAS
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade bg-obs" id="bms_modal" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content bg-bk">
-        <div class="modal-body">
-          <div class="container bg-gr text-dark shadow rounded p-2">
-            CRM
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade bg-obs" id="web_modal" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content bg-bk">
-        <div class="modal-body">
-          <div class="container bg-gr text-dark shadow rounded p-2">
-            EDU
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+</div>
