@@ -44,9 +44,14 @@
           Development
         </h2>
         <div class="p-3">
-          Python is our choice of language, using frameworks such as Django, Flask, and FastAPI to build secure
-          scalable websites, web applications and APIs. The unmistakable choices for Web UI are JavaScript or
-          jQuery. Perhaps React depending on the size, scale, and type of project.
+          <a href="{% url 'silimasoftware' 'blog' 'python' %}">Python</a> is our choice of language, using frameworks
+          such as <a href="{% url 'silimasoftware' 'blog' 'django' %}">Django</a>,
+          <a href="{% url 'silimasoftware' 'blog' 'flask' %}">Flask</a>, and
+          <a href="{% url 'silimasoftware' 'blog' 'fastapi' %}">FastAPI</a> to build secure
+          scalable websites, web applications and APIs. The undeniable choices for
+          <a href="{% url 'silimasoftware' 'blog' 'web-ui' %}"> Web UI</a> are JavaScript or
+          jQuery. Perhaps <a href="{% url 'silimasoftware' 'blog' 'react-django' %}"> React </a> depending on the size,
+          scale, and type of project.
         </div>
       </div>
     </div>
@@ -55,8 +60,9 @@
         <h2 class="card-title text-center headings-mono"><i class="fa-solid fa-database fa-2xl"></i> Database
         </h2>
         <div class="p-3">
-          Postgresql the RDBMS that could. Furthermore considering all the benefits of using Postgresql with Djangos
-          built-in object-relational mapping, it was a no-brainer.
+          <a href="{% url 'silimasoftware' 'blog' 'postgresql' %}"> Postgresql</a> the RDBMS that could. Furthermore
+          considering all the benefits of using Postgresql with Djangos built-in object-relational mapping, it was a
+          no-brainer.
         </div>
       </div>
     </div>
@@ -65,7 +71,9 @@
         <h2 class="card-title text-center headings-mono"><i class="fa-brands fa-jenkins fa-2xl"></i> CI/CD
         </h2>
         <div class="p-3">
-          Distributed Jenkins build nodes running in containers, building containers. Using pipeline scripts to
+          Distributed <a href="{% url 'silimasoftware' 'blog' 'jenkins' %}">Jenkins</a>
+          <a href="{% url 'silimasoftware' 'blog' 'build-nodes' %}">build nodes</a> running in containers, building
+          containers. Using <a href="{% url 'silimasoftware' 'blog' 'jenkins-pipelines' %}">pipeline scripts</a> to
           define builds, testing, and deployments.
         </div>
       </div>
@@ -76,7 +84,10 @@
           Containers
         </h2>
         <div class="p-3">
-          Containerize all the things. We love Containers. Using tools like Docker, Traefik, Nginx, and others
+          Containerize all the things. We love <a href="{% url 'silimasoftware' 'blog' 'containers' %}">Containers</a>.
+          Using tools like <a href="{% url 'silimasoftware' 'blog' 'docker' %}">Docker</a>, <a
+            href="{% url 'silimasoftware' 'blog' 'traefik' %}">Traefik</a>, <a
+            href="{% url 'silimasoftware' 'blog' 'nginx' %}">Nginx</a>, and others
           to manage containers in production securely has never been this simple. We have deployed our
           containers on a range of virtual machine vendors. If it runs Linux, chances are it
           will work.
@@ -84,4 +95,5 @@
       </div>
     </div>
   </div>
+  <p>For more on the tech and how we use it check out our <a style="position: relative; z-index: 2;" href="{% url 'silimasoftware' 'blog' %}">blog</a></p>
 </div>
