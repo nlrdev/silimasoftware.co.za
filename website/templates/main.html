@@ -16,6 +16,10 @@
 </head>
 
 <body>
+  <div class="loader-wrapper">
+    <span class="loader">
+      <i class="fa-solid fa-spinner fa-2xl loader-inner"></i>
+  </div>
   <ul id="msg_queue" class="list-group" style="
               position: absolute;
               width: fit-content;
@@ -40,5 +44,9 @@
 <script type="text/javascript" src="{% static script %}"></script>
 {% endfor %}
 {% endif %}
-
+<script>
+  $(window).on("load",function(){
+    $(".loader-wrapper").fadeOut("slow");
+  });
+</script>
 </html>
